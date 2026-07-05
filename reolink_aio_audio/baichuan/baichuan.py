@@ -431,11 +431,10 @@ class Baichuan:
 
         await self._connect_if_needed()
         if TYPE_CHECKING:
-            assert self._transport is not None
+            assert self._connection is not None
 
         _LOGGER.debug("Baichuan host %s: writing binary no-reply cmd_id %s, binary length %s", self._host, cmd_id, len(binary_body))
-        async with self._mutex:
-            self._transport.write(header + enc_ext + binary_body)
+        await self._connection.send_without_wait(header + enc_ext + binary_body, cmd_id=cmd_id)
 
     def _aes_encrypt(self, body: bytes) -> bytes:
         """Encrypt a message using AES encryption"""
