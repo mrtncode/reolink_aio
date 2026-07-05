@@ -12,4 +12,4 @@ readme = "README.md"
 requires-python = ">=3.10"
 
 [tool.setuptools]
-packages = ["reolink_aio_audio"]
+packages = ["reolink_aio_audio", "reolink_aio_audio.baichuan"]
