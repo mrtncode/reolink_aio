@@ -7,12 +7,12 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import AsyncMock, Mock, patch
 
-from reolink_aio.baichuan.audio import (
+from reolink_aio_audio.baichuan.audio import (
     BC_MEDIA_ADPCM_MAGIC,
     build_bc_media_frame,
     encode_pcm_to_adpcm,
 )
-from reolink_aio.baichuan.baichuan import Baichuan
+from reolink_aio_audio.baichuan.baichuan import Baichuan
 
 
 class _TalkRecordingTransport:
