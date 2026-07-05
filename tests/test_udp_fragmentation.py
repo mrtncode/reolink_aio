@@ -1,6 +1,6 @@
 import unittest
 
-from reolink_aio.baichuan.udp_protocol import BaichuanUdpConnection, MAGIC_UDP_BC, MTU
+from reolink_aio_audio.baichuan.udp_protocol import BaichuanUdpConnection, MAGIC_UDP_BC, MTU
 
 TEST_HOST = "test-host"
 TEST_PORT = 12345

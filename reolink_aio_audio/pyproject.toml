@@ -1,0 +1,15 @@
+[tool.black]
+line-length = 175
+
+[tool.isort]
+profile = "black"
+
+[project]
+name = "reolink_aio_audio"
+version = "0.1.0"
+description = "Reolink AIO fork with Baichuan audio support"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["reolink_aio_audio"]
