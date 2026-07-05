@@ -12,3 +12,5 @@ __pycache__/
 *.whl
 *.egg-info/
 /build/
+
+test.py
