@@ -10,6 +10,13 @@ version = "0.1.0"
 description = "Reolink AIO fork with Baichuan audio support"
 readme = "README.md"
 requires-python = ">=3.10"
+dependencies = [
+    "aiohttp",
+    "aiortsp",
+    "orjson",
+    "pycryptodomex",
+    "typing_extensions"
+]
 
 [tool.setuptools]
 packages = ["reolink_aio_audio", "reolink_aio_audio.baichuan"]
