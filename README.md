@@ -1,6 +1,10 @@
+## Fork of starkillerOG/reolink_aio
+This fork includes two way audio/ talk function using the baichuan protocl. Special thanks to this [PR](https://github.com/starkillerOG/reolink_aio/pull/165)!
+This package is used for the custom HA integration ([here](https://github.com/mrtncode/ha-reolink-talk)) with a dashboard card ([here](https://github.com/mrtncode/ha-reolink-talk-card))
+
+---
+
 <h2 align="center">
-  <a href="https://reolink.com"><img src="https://raw.githubusercontent.com/starkillerOG/reolink_aio/master/doc/logo.png" width="200"></a>
-  <br>
   <i>Reolink NVR/cameras API package</i>
   <br>
 </h2>
