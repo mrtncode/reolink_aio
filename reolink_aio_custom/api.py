@@ -581,7 +581,7 @@ class Host:
             # password contains chars not in ALLOWED_CHARS or FORBIDEN_CHARS
             unknown_chars = password_set - ALLOWED_CHARS.union(FORBIDEN_CHARS)
             _LOGGER.warning(
-                "Reolink password contains untested special character: %s, this could cause problems, please make an issue at https://github.com/starkillerOG/reolink_aio",
+                "Reolink password contains untested special character: %s, this could cause problems, please make an issue at https://github.com/starkillerOG/reolink_aio_custom",
                 ", ".join(unknown_chars),
             )
             return False
@@ -1468,7 +1468,7 @@ class Host:
         if self.baichuan.https_enabled is None and self.baichuan.http_enabled is None:
             raise LoginError(
                 f"Reolink device '{self._host}' does not have a HTTPs API, "
-                "a Reolink Home Hub or NVR is required to use this device with reolink_aio, "
+                "a Reolink Home Hub or NVR is required to use this device with reolink_aio_custom, "
                 "connect this device to the Reolink Home Hub/NVR and connect to the Hub/NVR instead to access this device"
             )
 
@@ -6592,7 +6592,7 @@ class Host:
         self,
         URL: str,
         expected_response_type: Literal["application/json"] | Literal["application/octet-stream"] = "application/json",
-        user_agent: str = "reolink_aio",
+        user_agent: str = "reolink_aio_custom",
     ) -> dict[str, Any] | aiohttp.ClientResponse:
         """Generic send method for reolink.com site."""
 

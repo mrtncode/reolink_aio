@@ -1,5 +1,5 @@
 <h2 align="center">
-  <a href="https://reolink.com"><img src="https://raw.githubusercontent.com/starkillerOG/reolink_aio/master/doc/logo.png" width="200"></a>
+  <a href="https://reolink.com"><img src="https://raw.githubusercontent.com/starkillerOG/reolink_aio_custom/master/doc/logo.png" width="200"></a>
   <br>
   <i>Reolink NVR/cameras API package</i>
   <br>
@@ -11,10 +11,10 @@
   <a href='https://ko-fi.com/A3O220R062' target='_blank'><img style='border:0px;height:21px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
   <a href="https://reolink.pxf.io/q44QWq"><img src="https://img.shields.io/static/v1?label=Affiliate%20link&message=%E2%9D%A4&color=%23fe8e86" alt="Affiliate link"></a>
   <a href="https://pypi.org/project/reolink-aio"><img src="https://img.shields.io/pypi/dm/reolink-aio"></a>
-  <a href="https://github.com/starkillerOG/reolink_aio/releases"><img src="https://img.shields.io/github/v/release/StarkillerOG/reolink_aio?display_name=tag&include_prereleases&sort=semver" alt="Current version"></a>
+  <a href="https://github.com/starkillerOG/reolink_aio_custom/releases"><img src="https://img.shields.io/github/v/release/StarkillerOG/reolink_aio_custom?display_name=tag&include_prereleases&sort=semver" alt="Current version"></a>
 </p>
 
-The `reolink_aio` Python package allows you to integrate your [Reolink](https://www.reolink.com/) devices (NVR/cameras) in your application.
+The `reolink_aio_custom` Python package allows you to integrate your [Reolink](https://www.reolink.com/) devices (NVR/cameras) in your application.
 
 ### Description
 
@@ -36,15 +36,15 @@ pip3 install reolink-aio
 
 or manually:
 ````bash
-git clone https://github.com/StarkillerOG/reolink_aio
-cd reolink_aio/
+git clone https://github.com/StarkillerOG/reolink_aio_custom
+cd reolink_aio_custom/
 pip3 install .
 ````
 
 ### Usage
 
 ````python
-from reolink_aio.api import Host
+from reolink_aio_custom.api import Host
 import asyncio
 
 # Create a host-object (representing either a camera, or NVR with several channels)
@@ -87,7 +87,7 @@ await host.logout()
 
 This is an example of the usage of the API. In this case we want to retrive and print the Mac Address of the NVR.
 ````python
-from reolink_aio.api import Host
+from reolink_aio_custom.api import Host
 import asyncio
 
 async def print_mac_address():
@@ -111,7 +111,7 @@ This is an example of how to receive TCP push events.
 The callback will be called each time a push is received.
 The state variables of the Host class will automatically be updated when a push comes in.
 ````python
-from reolink_aio.api import Host
+from reolink_aio_custom.api import Host
 import asyncio
 import logging
 

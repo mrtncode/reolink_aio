@@ -10,17 +10,16 @@ HERE = pathlib.Path(__file__).parent
 # The text of the README file
 README = (HERE / "README.md").read_text()
 
-setup(name='reolink_aio',
+setup(name='reolink-aio-custom',
       version='0.21.18',
-      description='Reolink NVR/cameras API package',
+      description='Reolink NVR/cameras API package (Custom Fork)',
       long_description=README,
       long_description_content_type="text/markdown",
-      url='https://github.com/starkillerOG/reolink_aio',
+      url='https://github.com/starkillerOG/reolink_aio_custom',
       author='starkillerOG',
-      author_email='starkiller.og@gmail.com',
       license='MIT',
       packages=find_packages(),
-      package_data={"reolink_aio": ["py.typed"]},
+      package_data={"reolink_aio_custom_custom": ["py.typed"]},
       python_requires='>=3.11',
       install_requires=[
         'aiohttp',

@@ -2,7 +2,7 @@ import aiounittest
 import asyncio
 import time
 
-from reolink_aio.api import Host
+from reolink_aio_custom_custom.api import Host
 
 USER = "Test"
 PASSWORD = "12345678"

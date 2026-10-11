@@ -33,21 +33,21 @@ jobs:
         if [ -f test-requirements.txt ]; then pip install -r test-requirements.txt; fi
     - name: Analysing the code with pylint
       run: |
-        pylint reolink_aio
+        pylint reolink_aio_custom
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
-        flake8 reolink_aio --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 reolink_aio_custom --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings.
-        flake8 reolink_aio --count --exit-zero --max-line-length=175 --statistics
+        flake8 reolink_aio_custom --count --exit-zero --max-line-length=175 --statistics
     - name: isort
       run: |
-        isort reolink_aio
+        isort reolink_aio_custom
     - name: Black formatting
       uses: psf/black@stable
       with:
         options: "--check --verbose"
-        src: "./reolink_aio"
+        src: "./reolink_aio_custom"
     - name: mypy type checking
       run: |
-        mypy reolink_aio 
+        mypy reolink_aio_custom 

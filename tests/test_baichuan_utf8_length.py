@@ -4,8 +4,8 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import AsyncMock, Mock
 
-from reolink_aio.baichuan.baichuan import Baichuan
-from reolink_aio.baichuan import xmls
+from reolink_aio_custom_custom.baichuan.baichuan import Baichuan
+from reolink_aio_custom_custom.baichuan import xmls
 
 
 class _RecordingTransport:
